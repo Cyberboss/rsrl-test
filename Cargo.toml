@@ -1,0 +1,11 @@
+[package]
+name = "rsrl-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.7"
+rsrl = "0.8.1"
+
+blas-src = { version = "0.4", default-features = false, features = ["openblas"] }
+openblas-src = { version = "0.7", default-features = false, features = ["cblas", "system"] }
